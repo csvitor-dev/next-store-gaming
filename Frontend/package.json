@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build --no-lint",
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -s ./public -p 6006",
