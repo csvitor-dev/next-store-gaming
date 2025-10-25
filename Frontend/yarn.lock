@@ -2236,6 +2236,11 @@
     resolve-from "^5.0.0"
     store2 "^2.12.0"
 
+"@types/aos@^3.0.7":
+  version "3.0.7"
+  resolved "https://registry.npmjs.org/@types/aos/-/aos-3.0.7.tgz"
+  integrity sha512-sEhyFqvKauUJZDbvAB3Pggynrq6g+2PS4XB3tmUr+mDL1gfDJnwslUC4QQ7/l8UD+LWpr3RxZVR/rHoZrLqZVg==
+
 "@types/braces@*":
   version "3.0.1"
   resolved "https://registry.npmjs.org/@types/braces/-/braces-3.0.1.tgz"

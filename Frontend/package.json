@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
-    "build": "next build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@types/aos": "^3.0.7",
     "aos": "^2.3.4",
     "classnames": "^2.3.1",
     "next": "11.1.0",
