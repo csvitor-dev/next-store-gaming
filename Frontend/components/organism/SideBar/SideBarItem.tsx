@@ -1,6 +1,7 @@
 import React from "react";
 import cx from "classnames";
 import Link from "next/link";
+
 interface SideBarItemProps {
   title: string;
   icon:
@@ -20,7 +21,7 @@ const SideBarItem = ({
   icon,
   active,
   href,
-}: Partial<SideBarItemProps>) => {
+}: SideBarItemProps) => {
   const classItem = cx({
     item: true,
     "mb-30": true,
