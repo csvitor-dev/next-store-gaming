@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-4 text-lg-start text-center">
-              <a href="" className="mb-30">
+              <a href="/" className="mb-30">
                 <svg
                   width="60"
                   height="60"
@@ -44,7 +44,7 @@ const Footer = () => {
                 <br /> untuk menjadi pemenang sejati
               </p>
               <p className="mt-30 text-lg color-palette-1 mb-30">
-                Copyright 2021. All Rights Reserved.
+                Copyright {new Date().getFullYear()}. All Rights Reserved.
               </p>
             </div>
             <div className="col-lg-8 mt-lg-0 mt-20">
@@ -56,7 +56,7 @@ const Footer = () => {
                   <ul className="list-unstyled">
                     <li className="mb-6">
                       <a
-                        href=""
+                        href="#"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         About Us
@@ -64,7 +64,7 @@ const Footer = () => {
                     </li>
                     <li className="mb-6">
                       <a
-                        href=""
+                        href="#"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         Press Release
@@ -72,7 +72,7 @@ const Footer = () => {
                     </li>
                     <li className="mb-6">
                       <a
-                        href=""
+                        href="#"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         Terms of Use
@@ -80,7 +80,7 @@ const Footer = () => {
                     </li>
                     <li className="mb-6">
                       <a
-                        href=""
+                        href="#"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         Privacy & Policy
@@ -95,7 +95,7 @@ const Footer = () => {
                   <ul className="list-unstyled">
                     <li className="mb-6">
                       <a
-                        href=""
+                        href="#"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         Refund Policy
@@ -103,7 +103,7 @@ const Footer = () => {
                     </li>
                     <li className="mb-6">
                       <a
-                        href=""
+                        href="#"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         Unlock Rewards
@@ -111,7 +111,7 @@ const Footer = () => {
                     </li>
                     <li className="mb-6">
                       <a
-                        href=""
+                        href="#"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         Live Chatting
@@ -142,7 +142,7 @@ const Footer = () => {
                     </li>
                     <li className="mb-6">
                       <a
-                        href="http://maps.google.com/?q=Pasific 12,
+                        href="https://maps.google.com/?q=Pasific 12,
                                         Jakarta Selatan"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
