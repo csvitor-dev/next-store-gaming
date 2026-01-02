@@ -57,36 +57,24 @@ const Footer = () => {
                   </p>
                   <ul className="list-unstyled">
                     <li className="mb-6">
-                      <a
-                        href="#"
-                        className="text-lg color-palette-1 text-decoration-none"
-                      >
+                      <button className="text-lg color-palette-1 text-decoration-none bg-transparent border-0 p-0">
                         About Us
-                      </a>
+                      </button>
                     </li>
                     <li className="mb-6">
-                      <a
-                        href="#"
-                        className="text-lg color-palette-1 text-decoration-none"
-                      >
+                      <button className="text-lg color-palette-1 text-decoration-none bg-transparent border-0 p-0">
                         Press Release
-                      </a>
+                      </button>
                     </li>
                     <li className="mb-6">
-                      <a
-                        href="#"
-                        className="text-lg color-palette-1 text-decoration-none"
-                      >
+                      <button className="text-lg color-palette-1 text-decoration-none bg-transparent border-0 p-0">
                         Terms of Use
-                      </a>
+                      </button>
                     </li>
                     <li className="mb-6">
-                      <a
-                        href="#"
-                        className="text-lg color-palette-1 text-decoration-none"
-                      >
+                      <button className="text-lg color-palette-1 text-decoration-none bg-transparent border-0 p-0">
                         Privacy & Policy
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>
@@ -97,28 +85,19 @@ const Footer = () => {
                   </p>
                   <ul className="list-unstyled">
                     <li className="mb-6">
-                      <a
-                        href="#"
-                        className="text-lg color-palette-1 text-decoration-none"
-                      >
+                      <button className="text-lg color-palette-1 text-decoration-none bg-transparent border-0 p-0">
                         Refund Policy
-                      </a>
+                      </button>
                     </li>
                     <li className="mb-6">
-                      <a
-                        href="#"
-                        className="text-lg color-palette-1 text-decoration-none"
-                      >
+                      <button className="text-lg color-palette-1 text-decoration-none bg-transparent border-0 p-0">
                         Unlock Rewards
-                      </a>
+                      </button>
                     </li>
                     <li className="mb-6">
-                      <a
-                        href="#"
-                        className="text-lg color-palette-1 text-decoration-none"
-                      >
+                      <button className="text-lg color-palette-1 text-decoration-none bg-transparent border-0 p-0">
                         Live Chatting
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>
@@ -129,19 +108,24 @@ const Footer = () => {
                   </p>
                   <ul className="list-unstyled">
                     <li className="mb-6">
-                      <a href="mailto:hi@store.gg" className="text-lg color-palette-1 text-decoration-none">
+                      <a
+                        href="mailto:hi@store.gg"
+                        className="text-lg color-palette-1 text-decoration-none"
+                      >
                         hi@store.gg
                       </a>
                     </li>
                     <li className="mb-6">
-                      <a href="mailto:team@store.gg" className="text-lg color-palette-1 text-decoration-none">
+                      <a
+                        href="mailto:team@store.gg"
+                        className="text-lg color-palette-1 text-decoration-none"
+                      >
                         team@store.gg
                       </a>
                     </li>
                     <li className="mb-6">
                       <a
-                        href="https://maps.google.com/?q=Pasific 12,
-                                        Jakarta Selatan"
+                        href="https://maps.google.com/?q=Pasific 12, Jakarta Selatan"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         Pasific 12, Jakarta Selatan
