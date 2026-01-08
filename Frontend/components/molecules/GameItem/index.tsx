@@ -6,7 +6,6 @@ interface GameItemProps {
   title: string;
   platform: string;
   image:
-    | string
     | "/assets/img/Thumbnail1.png"
     | "/assets/img/Thumbnail2.png"
     | "/assets/img/Thumbnail3.png"
@@ -31,7 +30,6 @@ const GameItem = ({ title, platform, image, id }: GameItemProps) => {
             alt="thumbnail-game"
           />
         </div>
-
         <div className="cover position-absolute bottom-0 m-32">
           <div className="d-flex flex-column h-100 justify-content-between">
             <div className="game-icon mx-auto">
