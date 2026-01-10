@@ -20,7 +20,7 @@ const Menu = (props: Partial<MenuProps>) => {
   return (
     <li className="nav-item my-auto">
       <Link href={href}>
-        <a className={classTitle} aria-current="page">
+        <a className={classTitle} aria-current="page" href={href}>
           {title}
         </a>
       </Link>

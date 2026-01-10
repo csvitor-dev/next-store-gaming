@@ -12,7 +12,7 @@ const CheckoutConfirmation = () => {
     <>
       <label className="checkbox-label text-lg color-palette-1">
         I have transferred the money
-        <input type="checkbox" />
+        <input type="checkbox"/>
         <span className="checkmark"></span>
       </label>
 

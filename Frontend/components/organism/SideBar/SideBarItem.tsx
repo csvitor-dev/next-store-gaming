@@ -16,12 +16,7 @@ interface SideBarItemProps {
   href: string;
 }
 
-const SideBarItem = ({
-  title,
-  icon,
-  active,
-  href,
-}: SideBarItemProps) => {
+const SideBarItem = ({ title, icon, active, href }: SideBarItemProps) => {
   const classItem = cx({
     item: true,
     "mb-30": true,
@@ -32,9 +27,19 @@ const SideBarItem = ({
     <div className={classItem}>
       <img className="icon me-3" src={icon} width={25} height={25} />
       <p className="item-title m-0">
-        <Link href={href}>
-          <a className="text-lg text-decoration-none">{title}</a>
-        </Link>
+        {href ? (
+          <Link href={href} passHref>
+            <a className="text-lg text-decoration-none">{title}</a>
+          </Link>
+        ) : (
+          <button
+            type="button"
+            className="text-lg text-decoration-none btn-link"
+            style={{ background: "none", border: "none", padding: 0 }}
+          >
+            {title}
+          </button>
+        )}
       </p>
     </div>
   );
