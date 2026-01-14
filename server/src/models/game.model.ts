@@ -1,5 +1,13 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
+
+interface IRequirement {
+  os: string;
+  cpu: string;
+  ram: string;
+  gpu: string;
+  storage: string;
+}
 export interface IGame extends Document {
   slug: string;
   title: string;
@@ -13,7 +21,14 @@ export interface IGame extends Document {
   developer: string;
   releaseDate: string;
   tags?: string[];
+
+  requirements?: {
+    minimum: IRequirement;
+    recommended: IRequirement;
+  };
 }
+
+
 
 const GameSchema: Schema = new Schema({
   slug: { type: String, required: true, unique: true },
@@ -27,8 +42,28 @@ const GameSchema: Schema = new Schema({
   description: { type: String, required: true },
   developer: { type: String, required: true },
   releaseDate: { type: String, required: true },
-  tags: [{ type: String }]
-}, {
+  tags: [{ type: String }], 
+
+  requirements: {
+    minimum: {
+      os: { type: String },
+      cpu: { type: String },
+      ram: { type: String },
+      gpu: { type: String },
+      storage: { type: String },
+    },
+    recommended: {
+      os: { type: String },
+      cpu: { type: String },
+      ram: { type: String },
+      gpu: { type: String },
+      storage: { type: String },
+    }
+  }
+},
+
+
+{
   timestamps: true,
   toJSON: {
     virtuals: true,
