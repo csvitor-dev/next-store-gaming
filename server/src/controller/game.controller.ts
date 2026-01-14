@@ -11,10 +11,29 @@ const MOCK_GAMES = [
     description: "Junte-se à caçadora de máquinas Aloy e lidere um grupo de heróis coloridos em uma missão para salvar o mundo e descobrir os segredos de seu passado.",
     developer: "Guerrilla Games / Studio Gobo",
     releaseDate: "14 Nov, 2024",
-    coverImage: "../../public/images/horizon-cover.png", 
+    coverImage: "/images/horizon-cover.png", 
     squareImage: "", 
-    bannerImage: "../../public/images/horizon-banner.png",   
-    gallery: []
+    bannerImage: "/images/horizon-banner.png",   
+    gallery: [
+      "/images/horizon-banner.png"
+    ],
+
+    requirements: {
+      minimum: {
+        os: "Windows 10 64-bit",
+        cpu: "Intel Core i5-8400 / AMD Ryzen 5 2600",
+        ram: "16 GB",
+        gpu: "NVIDIA GeForce GTX 1650 / AMD Radeon RX 580",
+        storage: "30 GB SSD"
+      },
+      recommended: {
+        os: "Windows 11 64-bit",
+        cpu: "Intel Core i7-10700K / AMD Ryzen 7 5800X",
+        ram: "32 GB",
+        gpu: "NVIDIA GeForce RTX 3070 / AMD Radeon RX 6800",
+        storage: "30 GB SSD"
+      }
+    }
   },
   // --- JOGO 2: Destiny 2: A Forma Final ---
   {
@@ -25,10 +44,29 @@ const MOCK_GAMES = [
     description: "A Forma Final chegou. Uma solidificação apavorante da realidade em um projeto distorcido da Testemunha. Embarque em uma jornada perigosa.",
     developer: "Bungie",
     releaseDate: "04 Jun, 2024",
-    coverImage: "../../public/images/destiny-2-cover.png",
+    coverImage: "/images/destiny-2-cover.png",
     squareImage: "",
-    bannerImage: "../../public/images/destiny-2-banner.png",
-    gallery: []
+    bannerImage: "/images/destiny-2-banner.png",
+    gallery: [
+      "/images/destiny-2-banner.png"
+    ],
+
+    requirements: {
+      minimum: {
+        os: "Windows 10 - 64-Bit",
+        cpu: "Intel Core i5-6600K @ 3.50GHz or AMD Ryzen 5 1600 @ 3.2 GHZ",
+        ram: "8 GB",
+        gpu: "NVIDIA GeForce GTX 1050 Ti 4GB or AMD Radeon RX 570 4GB",
+        storage: "100 GB"
+      },
+      recommended: {
+        os: "Windows 10 - 64-Bit",
+        cpu: "Intel Core i7-6700 @ 3.40GHz or AMD Ryzen 7 2700X @ 3.7 GHZ",
+        ram: "12 GB",
+        gpu: "NVIDIA GeForce GTX 1660 or AMD RX 5600 XT",
+        storage: "100 GB SSD"
+      }
+    }
   },
   // --- JOGO 3: Gran Turismo 7 ---
   {
@@ -39,10 +77,28 @@ const MOCK_GAMES = [
     description: "Gran Turismo 7 reúne as melhores funcionalidades do simulador de direção real. Com mais de 420 carros disponíveis na Brand Central.",
     developer: "Polyphony Digital",
     releaseDate: "04 Mar, 2022",
-    coverImage: "../../public/images/gt-cover.png",
+    coverImage: "/images/gt-cover.png",
     squareImage: "",
-    bannerImage: "../../public/images/gt-banner.png",
-    gallery: []
+    bannerImage: "/images/gt-banner.png",
+    gallery: [
+       "/images/gt-banner.png"
+    ],
+    requirements: {
+      minimum: {
+        os: "Windows 10 - 64-Bit",
+        cpu: "Intel Core i5-6600K @ 3.50GHz or AMD Ryzen 5 1600 @ 3.2 GHZ",
+        ram: "8 GB",
+        gpu: "NVIDIA GeForce GTX 1050 Ti 4GB or AMD Radeon RX 570 4GB",
+        storage: "100 GB"
+      },
+      recommended: {
+        os: "Windows 10 - 64-Bit",
+        cpu: "Intel Core i7-6700 @ 3.40GHz or AMD Ryzen 7 2700X @ 3.7 GHZ",
+        ram: "12 GB",
+        gpu: "NVIDIA GeForce GTX 1660 or AMD RX 5600 XT",
+        storage: "100 GB SSD"
+      }
+    }
   },
   // --- JOGO 4: Dying Light: The Beast ---
   {
@@ -53,24 +109,62 @@ const MOCK_GAMES = [
     description: "Dying Light: The Beast é uma aventura zumbi autônoma ambientada em uma região rural pós-apocalíptica.",
     developer: "Techland",
     releaseDate: "Em Breve",
-    coverImage: "../../public/images/dbd-cover.png",
+    coverImage: "/images/dbd-cover.png",
     squareImage: "",
-    bannerImage: "../../public/images/dbd-banner.png",
-    gallery: []
+    bannerImage: "/images/dbd-banner.png",
+    gallery: [
+      "/images/dbd-banner.png"
+    ],
+
+    requirements: {
+      minimum: {
+        os: "Windows 10 - 64-Bit",
+        cpu: "Intel Core i5-6600K @ 3.50GHz or AMD Ryzen 5 1600 @ 3.2 GHZ",
+        ram: "8 GB",
+        gpu: "NVIDIA GeForce GTX 1050 Ti 4GB or AMD Radeon RX 570 4GB",
+        storage: "100 GB"
+      },
+      recommended: {
+        os: "Windows 10 - 64-Bit",
+        cpu: "Intel Core i7-6700 @ 3.40GHz or AMD Ryzen 7 2700X @ 3.7 GHZ",
+        ram: "12 GB",
+        gpu: "NVIDIA GeForce GTX 1660 or AMD RX 5600 XT",
+        storage: "100 GB SSD"
+      }
+    }
   },
   // --- JOGO 5: Fortnite ---
   {
     slug: "fortnite",
     title: "Fortnite",
-    price: 0.00,
-    originalPrice: 0.00,
+    price: 10.00,
+    originalPrice: 15.00,
     description: "Crie, jogue e batalhe com amigos gratuitamente no Fortnite. Seja o último jogador de pé no Battle Royale e Construção Zero.",
     developer: "Epic Games",
     releaseDate: "21 Jul, 2017",
-    coverImage: "",
-    squareImage: "../../public/images/fortnite-square.png",
-    bannerImage: "../../public/images/fortnite-banner.png",
-    gallery: []
+    coverImage: "/images/fortnite-square.png",
+    squareImage: "/images/fortnite-square.png",
+    bannerImage: "/images/fortnite-banner.png",
+    gallery: [
+      "/images/fortnite-banner.png"
+    ],
+
+    requirements: {
+      minimum: {
+        os: "Windows 10 - 64-Bit",
+        cpu: "Intel Core i5-6600K @ 3.50GHz or AMD Ryzen 5 1600 @ 3.2 GHZ",
+        ram: "8 GB",
+        gpu: "NVIDIA GeForce GTX 1050 Ti 4GB or AMD Radeon RX 570 4GB",
+        storage: "100 GB"
+      },
+      recommended: {
+        os: "Windows 10 - 64-Bit",
+        cpu: "Intel Core i7-6700 @ 3.40GHz or AMD Ryzen 7 2700X @ 3.7 GHZ",
+        ram: "12 GB",
+        gpu: "NVIDIA GeForce GTX 1660 or AMD RX 5600 XT",
+        storage: "100 GB SSD"
+      }
+    }
   },
   // --- JOGO 6: God of War Ragnarök ---
   {
@@ -82,9 +176,28 @@ const MOCK_GAMES = [
     developer: "Santa Monica Studio",
     releaseDate: "09 Nov, 2022",
     coverImage: "",
-    squareImage: "../../public/images/god-of-war-square.png",
-    bannerImage: "../../public/images/god-of-war-banner.png",
-    gallery: []
+    squareImage: "/images/god-of-war-ragnarok-square.png",
+    bannerImage: "/images/god-of-war-banner.png",
+    gallery: [
+      "/images/god-of-war-banner.png"
+    ],
+
+    requirements: {
+      minimum: {
+        os: "Windows 10 - 64-Bit",
+        cpu: "Intel Core i5-6600K @ 3.50GHz or AMD Ryzen 5 1600 @ 3.2 GHZ",
+        ram: "8 GB",
+        gpu: "NVIDIA GeForce GTX 1050 Ti 4GB or AMD Radeon RX 570 4GB",
+        storage: "100 GB"
+      },
+      recommended: {
+        os: "Windows 10 - 64-Bit",
+        cpu: "Intel Core i7-6700 @ 3.40GHz or AMD Ryzen 7 2700X @ 3.7 GHZ",
+        ram: "12 GB",
+        gpu: "NVIDIA GeForce GTX 1660 or AMD RX 5600 XT",
+        storage: "100 GB SSD"
+      }
+    }
   },
   // --- JOGO 7: Final Fantasy VII Rebirth ---
   {
@@ -96,9 +209,28 @@ const MOCK_GAMES = [
     developer: "Square Enix",
     releaseDate: "29 Fev, 2024",
     coverImage: "",
-    squareImage: "../../public/images/ff7-square.png",
-    bannerImage: "../../public/images/ff7-banner.png",
-    gallery: []
+    squareImage: "/images/ff-square.png",
+    bannerImage: "/images/ff-banner.png",
+    gallery: [
+      "/images/ff-banner.png"
+    ],
+
+    requirements: {
+      minimum: {
+        os: "Windows 10 - 64-Bit",
+        cpu: "Intel Core i5-6600K @ 3.50GHz or AMD Ryzen 5 1600 @ 3.2 GHZ",
+        ram: "8 GB",
+        gpu: "NVIDIA GeForce GTX 1050 Ti 4GB or AMD Radeon RX 570 4GB",
+        storage: "100 GB"
+      },
+      recommended: {
+        os: "Windows 10 - 64-Bit",
+        cpu: "Intel Core i7-6700 @ 3.40GHz or AMD Ryzen 7 2700X @ 3.7 GHZ",
+        ram: "12 GB",
+        gpu: "NVIDIA GeForce GTX 1660 or AMD RX 5600 XT",
+        storage: "100 GB SSD"
+      }
+    }
   },
   // --- JOGO 8: EA SPORTS FC 26 ---
   {
@@ -110,23 +242,40 @@ const MOCK_GAMES = [
     developer: "EA Canada",
     releaseDate: "26 Set, 2025",
     coverImage: "", 
-    squareImage: "../../public/images//ff-square.png", 
-    bannerImage: "../../public/images/ff-banner.png",
+    squareImage: "/images//fifa-square.png", 
+    bannerImage: "/images/fifa-banner.png",
     gallery: [
-      "../../public/images/fifa-galery-1.png",
-      "../../public/images/fifa-galery-2.png",
-      "../../public/images/fifa-galery-3.png",
-      "../../public/images/fifa-galery-4.png",
-      "../../public/images/fifa-galery-5.png",
-      "../../public/images/fifa-galery-6.png"
-    ]
+      "/images/fifa-galery-1.png",
+      "/images/fifa-galery-2.png",
+      "/images/fifa-galery-3.png",
+      "/images/fifa-galery-4.png",
+      "/images/fifa-galery-5.png",
+      "/images/fifa-galery-6.png"
+    ],
+
+    requirements: {
+      minimum: {
+        os: "Windows 10 - 64-Bit",
+        cpu: "Intel Core i5-6600K @ 3.50GHz or AMD Ryzen 5 1600 @ 3.2 GHZ",
+        ram: "8 GB",
+        gpu: "NVIDIA GeForce GTX 1050 Ti 4GB or AMD Radeon RX 570 4GB",
+        storage: "100 GB"
+      },
+      recommended: {
+        os: "Windows 10 - 64-Bit",
+        cpu: "Intel Core i7-6700 @ 3.40GHz or AMD Ryzen 7 2700X @ 3.7 GHZ",
+        ram: "12 GB",
+        gpu: "NVIDIA GeForce GTX 1660 or AMD RX 5600 XT",
+        storage: "100 GB SSD"
+      }
+    }
   }
 ];
 
 export const getGames = async (req: Request, res: Response) => {
   try {
     const games = await Game.find()
-      .select('slug title price originalPrice coverImage squareImage bannerImage -_id');
+      .select('slug title price originalPrice coverImage squareImage bannerImage');
       
     res.json(games);
   } catch (error) {
@@ -151,13 +300,17 @@ export const getGameBySlug = async (req: Request, res: Response) => {
 
 export const checkAndSeed = async () => {
     try {
+
+      await Game.deleteMany({}); 
+        console.log("Banco limpo via código.");
+
         const count = await Game.countDocuments();
         if (count === 0) {
-            console.log("🌱 Banco vazio. Inserindo dados de Mock...");
+            console.log("Banco vazio. Inserindo dados de Mock...");
             await Game.insertMany(MOCK_GAMES);
-            console.log("✅ Dados inseridos com sucesso!");
+            console.log("Dados inseridos com sucesso!");
         } else {
-            console.log(`ℹ️ Banco já contém ${count} jogos. Seeding pulado.`);
+            console.log(`ℹBanco já contém ${count} jogos. Seeding pulado.`);
         }
     } catch (error) {
         console.error("❌ Erro ao fazer seed do banco:", error);
