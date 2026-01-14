@@ -1,12 +1,13 @@
 import { HeroBanner } from "@/components/organism/hero-banner";
-import { GameCardVertical } from "@/components/molecules/game-card-vertical"; // Importe o Vertical
-import { GameCardSquare } from "@/components/molecules/game-card-square";     // Importe o Square
+import { GameCardVertical } from "@/components/molecules/game-card-vertical";
+import { GameCardSquare } from "@/components/molecules/game-card-square";
 import { api } from "@/services/api";
 
 export default async function HomePage() {
-  const games = await api.getGames(); 
+  const games = await api.getGames();
+  
   const trendingGames = games.slice(0, 5); 
-  const bestSellers = games.slice(0, 4);   
+  const bestSellers = games.slice(0, 8);
 
   return (
     <main className="container mx-auto pb-20">
@@ -29,7 +30,7 @@ export default async function HomePage() {
                title={game.title}
                price={game.price}
                originalPrice={game.originalPrice}
-               image={game.coverImage}
+               image={game.coverImage} 
              />
            ))}
         </div>
@@ -49,7 +50,7 @@ export default async function HomePage() {
                key={game.id}
                slug={game.slug}
                title={game.title}
-               image={game.coverImage}
+               image={game.squareImage || game.coverImage}
              />
            ))}
         </div>
