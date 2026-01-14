@@ -70,7 +70,7 @@ export function Navbar() {
 
           <div className="hidden lg:block h-6 w-px bg-zinc-800 mx-2"></div>
 
-          <div className="flex items-center gap-2">
+          <div className="hidden lg:flex  items-center gap-2">
             
             <Button variant="ghost" size="icon" className="text-zinc-400 hover:text-white border rounded-full hover:bg-zinc-800">
               <Sun size={20} />
