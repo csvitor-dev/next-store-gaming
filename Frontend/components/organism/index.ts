@@ -1,28 +1,18 @@
-import CheckoutConfirmation from "./CheckoutConfirmation";
-import CheckoutDetail from "./CheckoutDetail";
-import CheckoutItem from "./CheckoutItem";
-import FeaturedBanner from "./FeaturedBanner";
-import Footer from "./Footer";
-import MainBanner from "./MainBanner";
-import Navbar from "./Navbar";
-import ReachedBanner from "./ReachedBanner";
-import SignInForm from "./SignInForm";
-import SignUpForm from "./SignUpForm";
-import StoryBanner from "./StoryBanner";
-import TopUpForm from "./TopUpForm";
-import TopUpItem from "./TopUpItem";
-import TransactionBanner from "./TransactionBanner";
-import SideBar from "./SideBar";
-import OverviewContent from "./OverviewContent";
-import TransactionContent from "./TransactionContent";
-import TransactionDetailContent from "./TransactionDetailContent";
-
-export {
-    TransactionDetailContent,
-    TransactionContent,
-    OverviewContent,
-    SideBar,
-    SignUpForm,
-    SignInForm, CheckoutConfirmation, CheckoutItem, TopUpForm, FeaturedBanner, CheckoutDetail, ReachedBanner, TopUpItem, Navbar, MainBanner, TransactionBanner, StoryBanner, Footer
-};
-
+export { default as CheckoutConfirmation } from "./CheckoutConfirmation";
+export { default as CheckoutDetail } from "./CheckoutDetail";
+export { default as CheckoutItem } from "./CheckoutItem";
+export { default as FeaturedBanner } from "./FeaturedBanner";
+export { default as Footer } from "./Footer";
+export { default as MainBanner } from "./MainBanner";
+export { default as Navbar } from "./Navbar";
+export { default as ReachedBanner } from "./ReachedBanner";
+export { default as SignInForm } from "./SignInForm";
+export { default as SignUpForm } from "./SignUpForm";
+export { default as StoryBanner } from "./StoryBanner";
+export { default as TopUpForm } from "./TopUpForm";
+export { default as TopUpItem } from "./TopUpItem";
+export { default as TransactionBanner } from "./TransactionBanner";
+export { default as SideBar } from "./SideBar";
+export { default as OverviewContent } from "./OverviewContent";
+export { default as TransactionContent } from "./TransactionContent";
+export { default as TransactionDetailContent } from "./TransactionDetailContent";

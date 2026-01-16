@@ -23,14 +23,12 @@ const MainBanner = () => {
               <a
                 className="btn btn-get text-lg text-white rounded-pill"
                 href="#feature"
-                role="button"
               >
                 Get Started
               </a>
               <a
                 className="btn-learn text-lg color-palette-1 my-auto text-center"
                 href="/#"
-                role="button"
               >
                 Learn More
               </a>

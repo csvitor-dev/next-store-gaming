@@ -6,15 +6,13 @@ const SignUpForm = () => {
   return (
     <form action="">
       <div className="pb-50">
-        <Link href="/">
-          <a className="navbar-brand">
-            <Image
-              src="/assets/icon/logo.svg"
-              width={60}
-              height={60}
-              alt="logo"
-            />
-          </a>
+        <Link href="/" className="navbar-brand">
+          <Image
+            src="/assets/icon/logo.svg"
+            width={60}
+            height={60}
+            alt="logo"
+          />
         </Link>
       </div>
       <h2 className="text-4xl fw-bold color-palette-1 mb-10">Sign Up</h2>

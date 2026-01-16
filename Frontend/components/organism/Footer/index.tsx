@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-4 text-lg-start text-center">
-              <a href="" className="mb-30">
+              <a href="/" className="mb-30">
                 <svg
                   width="60"
                   height="60"
@@ -17,7 +17,6 @@ const Footer = () => {
                 >
                   <mask
                     id="mask0"
-                    mask-type="alpha"
                     maskUnits="userSpaceOnUse"
                     x="0"
                     y="0"
@@ -39,14 +38,17 @@ const Footer = () => {
                   </g>
                 </svg>
               </a>
+
               <p className="mt-30 text-lg color-palette-1 mb-30">
                 StoreGG membantu gamers
                 <br /> untuk menjadi pemenang sejati
               </p>
+
               <p className="mt-30 text-lg color-palette-1 mb-30">
-                Copyright 2021. All Rights Reserved.
+                Copyright {new Date().getFullYear()}. All Rights Reserved.
               </p>
             </div>
+
             <div className="col-lg-8 mt-lg-0 mt-20">
               <div className="row gap-sm-0">
                 <div className="col-md-4 col-6 mb-lg-0 mb-25">
@@ -55,70 +57,51 @@ const Footer = () => {
                   </p>
                   <ul className="list-unstyled">
                     <li className="mb-6">
-                      <a
-                        href=""
-                        className="text-lg color-palette-1 text-decoration-none"
-                      >
+                      <button className="text-lg color-palette-1 text-decoration-none bg-transparent border-0 p-0">
                         About Us
-                      </a>
+                      </button>
                     </li>
                     <li className="mb-6">
-                      <a
-                        href=""
-                        className="text-lg color-palette-1 text-decoration-none"
-                      >
+                      <button className="text-lg color-palette-1 text-decoration-none bg-transparent border-0 p-0">
                         Press Release
-                      </a>
+                      </button>
                     </li>
                     <li className="mb-6">
-                      <a
-                        href=""
-                        className="text-lg color-palette-1 text-decoration-none"
-                      >
+                      <button className="text-lg color-palette-1 text-decoration-none bg-transparent border-0 p-0">
                         Terms of Use
-                      </a>
+                      </button>
                     </li>
                     <li className="mb-6">
-                      <a
-                        href=""
-                        className="text-lg color-palette-1 text-decoration-none"
-                      >
+                      <button className="text-lg color-palette-1 text-decoration-none bg-transparent border-0 p-0">
                         Privacy & Policy
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>
+
                 <div className="col-md-4 col-6 mb-lg-0 mb-25">
                   <p className="text-lg fw-semibold color-palette-1 mb-12">
                     Support
                   </p>
                   <ul className="list-unstyled">
                     <li className="mb-6">
-                      <a
-                        href=""
-                        className="text-lg color-palette-1 text-decoration-none"
-                      >
+                      <button className="text-lg color-palette-1 text-decoration-none bg-transparent border-0 p-0">
                         Refund Policy
-                      </a>
+                      </button>
                     </li>
                     <li className="mb-6">
-                      <a
-                        href=""
-                        className="text-lg color-palette-1 text-decoration-none"
-                      >
+                      <button className="text-lg color-palette-1 text-decoration-none bg-transparent border-0 p-0">
                         Unlock Rewards
-                      </a>
+                      </button>
                     </li>
                     <li className="mb-6">
-                      <a
-                        href=""
-                        className="text-lg color-palette-1 text-decoration-none"
-                      >
+                      <button className="text-lg color-palette-1 text-decoration-none bg-transparent border-0 p-0">
                         Live Chatting
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>
+
                 <div className="col-md-4 col-12 mt-lg-0 mt-md-0 mt-25">
                   <p className="text-lg fw-semibold color-palette-1 mb-12">
                     Connect
@@ -126,7 +109,7 @@ const Footer = () => {
                   <ul className="list-unstyled">
                     <li className="mb-6">
                       <a
-                        href="mailto: hi@store.gg"
+                        href="mailto:hi@store.gg"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         hi@store.gg
@@ -134,7 +117,7 @@ const Footer = () => {
                     </li>
                     <li className="mb-6">
                       <a
-                        href="mailto: team@store.gg"
+                        href="mailto:team@store.gg"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         team@store.gg
@@ -142,8 +125,7 @@ const Footer = () => {
                     </li>
                     <li className="mb-6">
                       <a
-                        href="http://maps.google.com/?q=Pasific 12,
-                                        Jakarta Selatan"
+                        href="https://maps.google.com/?q=Pasific 12, Jakarta Selatan"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         Pasific 12, Jakarta Selatan
@@ -151,7 +133,7 @@ const Footer = () => {
                     </li>
                     <li className="mb-6">
                       <a
-                        href="tel: 02111229090"
+                        href="tel:02111229090"
                         className="text-lg color-palette-1 text-decoration-none"
                       >
                         021 - 1122 - 9090

@@ -11,13 +11,12 @@ const Footer = () => {
             Be The Winner
           </p>
         </div>
-        <a
+        <button
+          type="button"
           className="btn btn-get-started w-100 fw-medium text-xs text-center text-white rounded-pill"
-          href="#"
-          role="button"
         >
           Get Started
-        </a>
+        </button>
       </div>
     </div>
   );
