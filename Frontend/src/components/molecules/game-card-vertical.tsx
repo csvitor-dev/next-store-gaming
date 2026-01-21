@@ -20,8 +20,9 @@ export function GameCardVertical({ slug, title, price, originalPrice, image }: G
 
   return (
     <Link href={`/game/${slug}`} className="group h-full block">
-      <Card className="h-full border-0 bg-transparent flex flex-col gap-3">
-        <div className="relative aspect-[3/4] w-full rounded-lg overflow-hidden bg-zinc-800 shadow-md">
+      <Card className="h-full bg-card border border-border flex flex-col gap-3 p-2 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+        
+        <div className="relative aspect-[3/4] w-full rounded-lg overflow-hidden bg-muted shadow-inner">
           <Image
             src={image}
             alt={title}
@@ -29,31 +30,31 @@ export function GameCardVertical({ slug, title, price, originalPrice, image }: G
             className="object-cover transition-transform duration-300 group-hover:scale-105"
           />
           {discount > 0 && (
-            <Badge className="absolute top-2 right-2 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold px-2 py-0.5 rounded shadow-sm">
+            <Badge className="absolute top-2 right-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-2 py-0.5 rounded shadow-sm">
               -{discount}%
             </Badge>
           )}
         </div>
 
         <CardContent className="p-0 flex flex-col gap-1 flex-1">
-          <h3 className="font-bold text-white text-base truncate" title={title}>
+          <h3 className="font-bold text-card-foreground group-hover:text-primary transition-colors text-base truncate" title={title}>
             {title}
           </h3>
           
           <div className="mt-1">
             {originalPrice && (
-              <p className="text-xs text-zinc-500 line-through font-medium">
+              <p className="text-xs text-muted-foreground line-through font-medium">
                 {formattedOriginal}
               </p>
             )}
-            <p className="font-extrabold text-white text-xl">
+            <p className="font-extrabold text-card-foreground text-xl">
               {formattedPrice}
             </p>
           </div>
         </CardContent>
 
-        <CardFooter className="p-0 mt-auto">
-          <Button className="w-full bg-[#16a34a] hover:bg-[#15803d] text-white font-bold h-10 shadow-lg shadow-green-900/10 group-hover:shadow-green-900/30 transition-all">
+        <CardFooter className="p-0 mt-auto pt-1">
+          <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold h-10 shadow-lg shadow-primary/10 group-hover:shadow-primary/30 transition-all rounded-md">
             <ShoppingBag size={16} className="mr-2" />
             Comprar Agora
           </Button>
