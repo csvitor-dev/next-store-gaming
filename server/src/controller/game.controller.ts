@@ -2,7 +2,6 @@ import { Request, Response } from 'express';
 import Game, { IGame } from '../models/game.model';
 
 const MOCK_GAMES = [
-  // --- JOGO 1: LEGO Horizon Adventures ---
   {
     slug: "lego-horizon-adventures",
     title: "LEGO® Horizon Adventures™",
@@ -35,7 +34,6 @@ const MOCK_GAMES = [
       }
     }
   },
-  // --- JOGO 2: Destiny 2: A Forma Final ---
   {
     slug: "destiny-2-final-shape",
     title: "Destiny 2: A Forma Final",
@@ -68,7 +66,6 @@ const MOCK_GAMES = [
       }
     }
   },
-  // --- JOGO 3: Gran Turismo 7 ---
   {
     slug: "gran-turismo-7",
     title: "Gran Turismo™ 7",
@@ -100,7 +97,6 @@ const MOCK_GAMES = [
       }
     }
   },
-  // --- JOGO 4: Dying Light: The Beast ---
   {
     slug: "dying-light-the-beast",
     title: "Dying Light: The Beast",
@@ -133,7 +129,6 @@ const MOCK_GAMES = [
       }
     }
   },
-  // --- JOGO 5: Fortnite ---
   {
     slug: "fortnite",
     title: "Fortnite",
@@ -166,7 +161,6 @@ const MOCK_GAMES = [
       }
     }
   },
-  // --- JOGO 6: God of War Ragnarök ---
   {
     slug: "god-of-war-ragnarok",
     title: "God of War Ragnarök",
@@ -177,9 +171,10 @@ const MOCK_GAMES = [
     releaseDate: "09 Nov, 2022",
     coverImage: "",
     squareImage: "/images/god-of-war-ragnarok-square.png",
-    bannerImage: "/images/god-of-war-banner.png",
+    bannerImage: "/images/god-of-war-ragnarok-banner.png",
     gallery: [
-      "/images/god-of-war-banner.png"
+      "/images/god-of-war-ragnarok-banner.png",
+      "/images/god-of-war-ragnarok-banner.png"
     ],
 
     requirements: {
@@ -199,7 +194,6 @@ const MOCK_GAMES = [
       }
     }
   },
-  // --- JOGO 7: Final Fantasy VII Rebirth ---
   {
     slug: "ff7-rebirth",
     title: "Final Fantasy VII Rebirth",
@@ -232,7 +226,6 @@ const MOCK_GAMES = [
       }
     }
   },
-  // --- JOGO 8: EA SPORTS FC 26 ---
   {
     slug: "ea-sports-fc-26",
     title: "EA SPORTS FC™ 26",
