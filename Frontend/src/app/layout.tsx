@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ThemeProvider } from "../components/theme-provider"
 import { Navbar } from "@/components/organism/navbar";
 import { Footer } from "@/components/organism/footer";
 import "./globals.css";
@@ -25,17 +26,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className="dark">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen bg-background text-foreground`}
-      >
-    
-        <Navbar />
-        <div className="flex-1">
-          {children}
-        </div>
-
-        <Footer />
+    <html lang="pt-br" suppressHydrationWarning> 
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen bg-background text-foreground`}>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Navbar />
+            <div className="flex-1">
+              {children}
+            </div>
+            <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
